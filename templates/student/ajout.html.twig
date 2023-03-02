@@ -1,0 +1,11 @@
+<form method="post">
+<h1>Ajouter un étudiant</h1>
+    {{ form_label(form.email, 'Email de l\'etudiant') }}
+    {{ form_widget(form.email) }}
+   
+    
+    <br>
+    {{ form_widget(form._token) }}
+    <br>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>

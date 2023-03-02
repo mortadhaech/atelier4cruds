@@ -1,0 +1,26 @@
+
+<h2>liste de classroom</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>Editer</th>
+            <th>Delete</th>
+            
+        
+        </tr>
+    </thead>
+    <tbody>
+{%for f in class %}
+ <tr>
+                    <td>{{ f.id}}</td>
+                    <td>{{ f.name }}</td>
+                   <td><a href="{{ path('edittext', {'id': f.id, 'name': f.name}) }}">Editer</a></td>
+                   <td><a href="{{ path('deleteclass', {'id': f.id}) }}">Delete</a></td>
+
+                </tr>
+
+{%endfor%}
+  </tbody>
+</table>

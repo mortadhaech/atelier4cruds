@@ -1,0 +1,52 @@
+
+<h2>liste des etudiants</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>Editer</th>
+            <th>Delete</th>
+            
+        
+        </tr>
+    </thead>
+    <tbody>
+{%for f in stud %}
+ <tr>
+                    <td>{{ f.id}}</td>
+                    <td>{{ f.email }}</td>
+                   <td><a href="{{ path('editstudent', {'id': f.id, 'name': f.email}) }}">Editer</a></td>
+                   <td><a href="{{ path('deleteStudent', {'id': f.id}) }}">Delete</a></td>
+
+                </tr>
+
+{%endfor%}
+  </tbody>
+</table>
+
+<h2>liste des etudiants</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>createdAt</th>
+           <th>Editer</th>
+            <th>Delete</th>
+            
+        
+        </tr>
+    </thead>
+    <tbody>
+{%for f in stclub %}
+ <tr>
+                    <td>{{ f.ref}}</td>
+                    <td>{{ f.createdAt }}</td>
+                   <td><a href="{{ path('editstudent', {'id': f.ref, 'name': f.createdAt}) }}">Editer</a></td>
+                   <td><a href="{{ path('deleteStudent', {'id': f.ref}) }}">Delete</a></td>
+
+                </tr>
+
+{%endfor%}
+  </tbody>
+</table>

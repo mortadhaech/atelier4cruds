@@ -1,0 +1,11 @@
+<form method="post">
+<h3>Modifier Student </h3>
+
+    <h5>{{ form_label(form.email, 'Email') }}</h5>
+    {{ form_widget(form.email) }}
+
+    <br>
+    {{ form_widget(form._token) }}
+    <br>
+    <button type="submit" class="btn btn-primary">Modifier</button>
+</form>

@@ -1,0 +1,11 @@
+<form method="post">
+<h1>Ajouter un club</h1>
+    {{ form_label(form.createdAt, 'date de creation') }}
+    {{ form_widget(form.createdAt) }}
+   
+    
+    <br>
+    {{ form_widget(form._token) }}
+    <br>
+    <button type="submit" class="btn btn-primary">cree</button>
+</form>

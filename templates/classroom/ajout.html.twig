@@ -1,0 +1,10 @@
+<form method="post">
+<h3>Ajouter Classroom </h3>
+
+    <h5>{{ form_label(form.name, 'Nom de la classe') }}</h5>
+    {{ form_widget(form.name) }}
+    <br>
+    {{ form_widget(form._token) }}
+    <br>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>

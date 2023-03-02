@@ -1,0 +1,11 @@
+<form method="post">
+<h3>Modifier club </h3>
+
+    <h5>{{ form_label(form.createdAt, 'createdAt') }}</h5>
+    {{ form_widget(form.createdAt) }}
+
+    <br>
+    {{ form_widget(form._token) }}
+    <br>
+    <button type="submit" class="btn btn-primary">Modifier</button>
+</form>
